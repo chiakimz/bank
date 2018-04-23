@@ -7,4 +7,9 @@ class Account
   def date
     Time.now.strftime("%m/%d/%Y")
   end
+
+  def balance
+    history = []
+    history.inject(0, :+)
+  end  
 end
