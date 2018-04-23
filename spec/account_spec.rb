@@ -14,10 +14,4 @@ describe Account do
       expect(account.date).to eq Time.now.strftime("%m/%d/%Y")
     end
   end
-
-  describe 'balance' do
-    it 'is a sum of an empty array' do
-      expect(account.balance).to eq 0
-    end
-  end
 end
